@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9OGXIu8vCCJJuWSG6URf2gGwCSnwZms51PW9qHBhOJKoOzyTD0C1xhM5hgRtGCuGpb/Hx/3k/EIi4NQSGTxB9A==",
+  "dgSpecHash": "IzA5bvRxr7J99ohZqz88Bt9rMyjeDtxRRQA/HvuokLCqij2wZnHcGYbxEtUgEz6jrN1KO5lVJK6SDo8IyF3xOQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\AuthorizationService.csproj",
+  "projectFilePath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\AuthorizationService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sujoy Basak\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
     "C:\\Users\\Sujoy Basak\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.8\\microsoft.aspnetcore.authentication.jwtbearer.3.1.8.nupkg.sha512",

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditBenchmarkModule.Testing", "AuditBenchmarkModule.Testing.csproj", "{26635CB6-DB74-490C-B57A-69B928F932D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuditBenchmarkModule", "..\..\source\repos\MFPE\AuditBenchmarkModule\AuditBenchmarkModule.csproj", "{4F88918E-F37B-494C-8F22-44DBCB3F3F58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26635CB6-DB74-490C-B57A-69B928F932D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26635CB6-DB74-490C-B57A-69B928F932D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26635CB6-DB74-490C-B57A-69B928F932D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26635CB6-DB74-490C-B57A-69B928F932D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F88918E-F37B-494C-8F22-44DBCB3F3F58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F88918E-F37B-494C-8F22-44DBCB3F3F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F88918E-F37B-494C-8F22-44DBCB3F3F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F88918E-F37B-494C-8F22-44DBCB3F3F58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45D6CCB7-4612-4EA3-9F85-C1599D4FE32E}
+	EndGlobalSection
+EndGlobal

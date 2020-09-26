@@ -9,6 +9,6 @@ namespace AuthorizationService.Provider
     public interface IAuthProvider
     {
         public string GenerateJSONWebToken(Authenticate userInfo, IConfiguration _config);
-        public dynamic AuthenticateUser(Authenticate login);
+        public Authenticate AuthenticateUser(Authenticate login);
     }
 }

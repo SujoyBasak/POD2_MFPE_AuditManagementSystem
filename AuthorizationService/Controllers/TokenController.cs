@@ -26,37 +26,38 @@ namespace AuthorizationService.Controllers
     {
         private static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(TokenController));
         private IConfiguration config;
-        private readonly IAuthProvider ap;
-        public TokenController(IConfiguration config,IAuthProvider ap)
+        private readonly IAuthProvider objProvider;
+        public TokenController(IConfiguration config,IAuthProvider objProvider)
         {
             this.config = config;
-            this.ap = ap;
+            this.objProvider = objProvider;
         }       
 
         [HttpPost]
-        public IActionResult Login([FromBody] Authenticate login)
+        public IActionResult Login([FromBody] Authenticate loginCredentials)
         {
-            _log4net.Info(" Http Post request");
-            if (login==null)
+            _log4net.Info(" Http Post request" +nameof(TokenController));
+            if (loginCredentials == null)
             {
                 return BadRequest();
             }
             try
             {
                 IActionResult response = Unauthorized();
-                Authenticate user = ap.AuthenticateUser(login);
+                Authenticate userCredentials = objProvider.AuthenticateUser(loginCredentials);
 
-                if (user != null)
+                if (userCredentials != null)
                 {
-                    var tokenString = ap.GenerateJSONWebToken(user, config);
+                    string tokenString = objProvider.GenerateJSONWebToken(userCredentials, config);
                     response = Ok(tokenString);
+                    return response;
                 }
 
-                return response;
+                return Unauthorized("Invalid Credentials");
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception Occured "+e.Message);
+                _log4net.Error("Exception Occured "+e.Message+" from " +nameof(TokenController));
                 return StatusCode(500);
             }
             

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\AuthorizationService.csproj": {}
+    "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\AuthorizationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\AuthorizationService.csproj": {
+    "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\AuthorizationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\AuthorizationService.csproj",
+        "projectUniqueName": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\AuthorizationService.csproj",
         "projectName": "AuthorizationService",
-        "projectPath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\AuthorizationService.csproj",
+        "projectPath": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\AuthorizationService.csproj",
         "packagesPath": "C:\\Users\\Sujoy Basak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuthorizationService\\obj\\",
+        "outputPath": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuthorizationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sujoy Basak\\AppData\\Roaming\\NuGet\\NuGet.Config",

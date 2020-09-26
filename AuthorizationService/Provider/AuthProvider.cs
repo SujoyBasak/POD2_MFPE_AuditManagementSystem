@@ -13,10 +13,11 @@ namespace AuthorizationService.Provider
 {
     public class AuthProvider:IAuthProvider
     {
-        private readonly ICredentialsRepo obj;
-        public AuthProvider(ICredentialsRepo _obj)
+        private static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(AuthProvider));
+        private readonly ICredentialsRepo objRepository;
+        public AuthProvider(ICredentialsRepo _objRepository)
         {
-            obj = _obj;
+            objRepository = _objRepository;
         }
         /// <summary>
         /// This method is responsible for generating token as per the userinfo given by the authenticate method.
@@ -30,11 +31,11 @@ namespace AuthorizationService.Provider
                 return null;
             try
             {
-                var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+                SymmetricSecurityKey securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
 
-                var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+                SigningCredentials credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-                var token = new JwtSecurityToken(_config["Jwt:Issuer"],
+                JwtSecurityToken token = new JwtSecurityToken(_config["Jwt:Issuer"],
                     _config["Jwt:Issuer"],
                     null,
                     expires: DateTime.Now.AddMinutes(15),
@@ -42,29 +43,26 @@ namespace AuthorizationService.Provider
 
                 return new JwtSecurityTokenHandler().WriteToken(token);
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                _log4net.Error("Exception Occured " + e.Message +nameof(AuthProvider));
                 return null;
             }
             
         }
         /// <summary>
-        /// This method is used to authenticate user if the user credentials exist int the database and it will return the same.
+        /// This method is used to authenticate user if the user credentials exist in the database and it will return the same.
         /// </summary>
         /// <param name="login"></param>
         /// <returns></returns>
 
-        public dynamic AuthenticateUser(Authenticate login)
-        {
-            if(login==null)
-            {
-                return null;
-            }
+        public Authenticate AuthenticateUser(Authenticate login)
+        {           
             try
             {
-                Authenticate user = null;                
+                Authenticate userCredentials = null;                
 
-                Dictionary<string,string> ValidUsersDictionary = obj.GetCredentials();
+                Dictionary<string,string> ValidUsersDictionary = objRepository.GetCredentials();
 
                 if (ValidUsersDictionary == null)
                     return null;
@@ -72,15 +70,15 @@ namespace AuthorizationService.Provider
                 {
                     if (ValidUsersDictionary.Any(u => u.Key == login.Name && u.Value == login.Password))
                     {
-                        user = new Authenticate { Name = login.Name, Password = login.Password };
-
+                        userCredentials = new Authenticate { Name = login.Name, Password = login.Password };
                     }
                 }               
 
-                return user;
+                return userCredentials;
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                _log4net.Error("Exception Occured " + e.Message+ " from "+ nameof(AuthProvider));
                 return null;
             }
             

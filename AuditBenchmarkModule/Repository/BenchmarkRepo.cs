@@ -1,13 +1,11 @@
 ﻿using AuditBenchmarkModule.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace AuditBenchmarkModule.Repository
 {
     public class BenchmarkRepo : IBenchmarkRepo
     {
+        private readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(BenchmarkRepo));
         private static List<AuditBenchmark> AuditBenchmarkList = new List<AuditBenchmark>()
         {
          /// <summary>
@@ -24,18 +22,19 @@ namespace AuditBenchmarkModule.Repository
                 AuditType="SOX",
                 BenchmarkNoAnswers=1
             }
-
         };
         public List<AuditBenchmark> GetNolist() 
         {
-            List<AuditBenchmark> ls = new List<AuditBenchmark>();
+            _log4net.Info(" Http GET request " + nameof(BenchmarkRepo));
+            List<AuditBenchmark> listOfCriteria = new List<AuditBenchmark>();
             try
             {
-                ls= AuditBenchmarkList;
-                return ls;
+                listOfCriteria = AuditBenchmarkList;
+                return listOfCriteria;
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                _log4net.Error(" Exception here" + e.Message + " " + nameof(BenchmarkRepo));
                 return null;
             }
             

@@ -17,34 +17,34 @@ namespace AuditSeverityModule.Controllers
     
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class AuditSeverityController : ControllerBase
     {
-        private readonly ISeverityProvider obj;
-        public AuditSeverityController(ISeverityProvider _obj)
+        private readonly ISeverityProvider objProvider;
+        public AuditSeverityController(ISeverityProvider _objProvider)
         {
-            obj = _obj;
+            objProvider = _objProvider;
         }
         readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(AuditSeverityController));
-
-
-        // POST: api/AuditSeverity
+                
         [HttpPost]
-        public IActionResult Post([FromBody]AuditRequest req)    //Change Here
+        public IActionResult Post([FromBody]AuditRequest req)
         {
-            _log4net.Info(" Http POST request from AuditSeverity");
+            _log4net.Info(" Http POST request from "+nameof(AuditSeverityController));
             if (req == null)
                 return BadRequest();
+
+            if (req.Auditdetails.Type != "Internal" && req.Auditdetails.Type != "SOX")
+                return BadRequest("You have given wrong audit type");
+
             try
             {
-                var response = obj.SeverityResponse(req);
-                if (response == null)
-                    return BadRequest("Check Your Data");
+                var response = objProvider.SeverityResponse(req);                
                 return Ok(response);
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception Occured "+e.Message);
+                _log4net.Error("Exception Occured "+e.Message+" from " + nameof(AuditSeverityController));
                 return StatusCode(500);
             }
             

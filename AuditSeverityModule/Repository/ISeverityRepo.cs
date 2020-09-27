@@ -9,5 +9,6 @@ namespace AuditSeverityModule.Repository
     public interface ISeverityRepo
     {
         public List<AuditBenchmark> Response();
+        
     }
 }

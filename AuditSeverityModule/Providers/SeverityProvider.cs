@@ -9,75 +9,73 @@ namespace AuditSeverityModule.Providers
 {
     public class SeverityProvider : ISeverityProvider
     {
-        ISeverityRepo obj;
-        public SeverityProvider(ISeverityRepo _obj)
+        ISeverityRepo objRepository;
+        readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(SeverityProvider));
+        public SeverityProvider(ISeverityRepo _objRepository)
         {
-            obj = _obj;
-        }
-        //Severity obj = new Severity();
+            objRepository = _objRepository;
+        }       
 
-        public AuditResponse SeverityResponse(AuditRequest Req)
-        {
-            if (Req == null)
-                return null;
+        public AuditResponse SeverityResponse(AuditRequest auditRequest)
+        {            
             try
             {
-                var ls = obj.Response();
-                if (ls == null)
-                {
-                    return null;
-                }
+                _log4net.Info(" Http POST request from " + nameof(SeverityProvider));
+                List<AuditBenchmark> listfromRepository = objRepository.Response();               
                 int count = 0, acceptableNo = 0;
 
-                if (Req.Auditdetails.questions.Question1 == false)
+                if (auditRequest.Auditdetails.questions.Question1 == false)
                     count++;
-                if (Req.Auditdetails.questions.Question2 == false)
+                if (auditRequest.Auditdetails.questions.Question2 == false)
                     count++;
-                if (Req.Auditdetails.questions.Question3 == false)
+                if (auditRequest.Auditdetails.questions.Question3 == false)
                     count++;
-                if (Req.Auditdetails.questions.Question4 == false)
+                if (auditRequest.Auditdetails.questions.Question4 == false)
                     count++;
-                if (Req.Auditdetails.questions.Question5 == false)
+                if (auditRequest.Auditdetails.questions.Question5 == false)
                     count++;
 
-                if (Req.Auditdetails.Type == ls[0].AuditType)
-                    acceptableNo = ls[0].BenchmarkNoAnswers;
-                else if (Req.Auditdetails.Type == ls[1].AuditType)
-                    acceptableNo = ls[1].BenchmarkNoAnswers;
-                else
-                    return null;
+                if (auditRequest.Auditdetails.Type == listfromRepository[0].AuditType)
+                    acceptableNo = listfromRepository[0].BenchmarkNoAnswers;
+                else if (auditRequest.Auditdetails.Type == listfromRepository[1].AuditType)
+                    acceptableNo = listfromRepository[1].BenchmarkNoAnswers;
+                
 
-                AuditResponse res = new AuditResponse();
-                if (Req.Auditdetails.Type == "Internal" && count <= acceptableNo)
+                Random randomNumber = new Random();
+                
+
+                AuditResponse auditResponse = new AuditResponse();
+                if (auditRequest.Auditdetails.Type == "Internal" && count <= acceptableNo)
                 {
-                    res.AuditId = 1;
-                    res.ProjectExexutionStatus = "GREEN";
-                    res.RemedialActionDuration = "No Action Needed";
+                    auditResponse.AuditId = randomNumber.Next();
+                    auditResponse.ProjectExexutionStatus = SeverityRepo.CriteriasfromRepository[0].ProjectExexutionStatus;
+                    auditResponse.RemedialActionDuration = SeverityRepo.CriteriasfromRepository[0].RemedialActionDuration;
                 }
-                else if (Req.Auditdetails.Type == "Internal" && count > acceptableNo)
+                else if (auditRequest.Auditdetails.Type == "Internal" && count > acceptableNo)
                 {
-                    res.AuditId = 1;
-                    res.ProjectExexutionStatus = "RED";
-                    res.RemedialActionDuration = "Action to be taken in 2 weeks";
+                    auditResponse.AuditId = randomNumber.Next();
+                    auditResponse.ProjectExexutionStatus = SeverityRepo.CriteriasfromRepository[1].ProjectExexutionStatus;
+                    auditResponse.RemedialActionDuration = SeverityRepo.CriteriasfromRepository[1].RemedialActionDuration;
                 }
-                else if (Req.Auditdetails.Type == "SOX" && count <= acceptableNo)
+                else if (auditRequest.Auditdetails.Type == "SOX" && count <= acceptableNo)
                 {
-                    res.AuditId = 1;
-                    res.ProjectExexutionStatus = "GREEN";
-                    res.RemedialActionDuration = "No Action Needed";
+                    auditResponse.AuditId = randomNumber.Next();
+                    auditResponse.ProjectExexutionStatus = SeverityRepo.CriteriasfromRepository[0].ProjectExexutionStatus;
+                    auditResponse.RemedialActionDuration = SeverityRepo.CriteriasfromRepository[0].RemedialActionDuration;
                 }
-                else if (Req.Auditdetails.Type == "SOX" && count > acceptableNo)
+                else if (auditRequest.Auditdetails.Type == "SOX" && count > acceptableNo)
                 {
-                    res.AuditId = 1;
-                    res.ProjectExexutionStatus = "RED";
-                    res.RemedialActionDuration = "Action to be taken in 2 weeks";
+                    auditResponse.AuditId = randomNumber.Next();
+                    auditResponse.ProjectExexutionStatus = SeverityRepo.CriteriasfromRepository[1].ProjectExexutionStatus;
+                    auditResponse.RemedialActionDuration = SeverityRepo.CriteriasfromRepository[1].RemedialActionDuration;
                 }
 
 
-                return res;
+                return auditResponse;
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                _log4net.Error("Exception Occured " + e.Message + " from " + nameof(SeverityProvider));
                 return null;
             }
                   

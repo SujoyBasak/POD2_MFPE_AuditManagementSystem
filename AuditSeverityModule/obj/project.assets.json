@@ -5809,19 +5809,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Shubham Debnath\\.nuget\\packages\\": {}
+    "C:\\Users\\Sujoy Basak\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Shubham Debnath\\source\\repos\\MFPE_Microservices\\MFPE-master\\AuditSeverityModule\\AuditSeverityModule.csproj",
+      "projectUniqueName": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuditSeverityModule\\AuditSeverityModule.csproj",
       "projectName": "AuditSeverityModule",
-      "projectPath": "C:\\Users\\Shubham Debnath\\source\\repos\\MFPE_Microservices\\MFPE-master\\AuditSeverityModule\\AuditSeverityModule.csproj",
-      "packagesPath": "C:\\Users\\Shubham Debnath\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Shubham Debnath\\source\\repos\\MFPE_Microservices\\MFPE-master\\AuditSeverityModule\\obj\\",
+      "projectPath": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuditSeverityModule\\AuditSeverityModule.csproj",
+      "packagesPath": "C:\\Users\\Sujoy Basak\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sujoy Basak\\source\\repos\\MFPE\\Microservices\\AuditSeverityModule\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Shubham Debnath\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sujoy Basak\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

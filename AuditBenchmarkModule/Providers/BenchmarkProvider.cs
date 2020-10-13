@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using AuditBenchmarkModule.Repository;
 using AuditBenchmarkModule.Models;
 
@@ -9,26 +7,27 @@ namespace AuditBenchmarkModule.Providers
 {
     public class BenchmarkProvider : IBenchmarkProvider
     {
-        private readonly IBenchmarkRepo obj;
-
-        public BenchmarkProvider(IBenchmarkRepo _obj)
+        private readonly IBenchmarkRepo objBenchmarkRepo;
+        private readonly log4net.ILog _log4net;
+        public BenchmarkProvider(IBenchmarkRepo _objBenchmarkRepo)
         {
-            obj = _obj;
+            _log4net = log4net.LogManager.GetLogger(typeof(BenchmarkProvider));
+            objBenchmarkRepo = _objBenchmarkRepo;
         }        
 
         public List<AuditBenchmark> GetBenchmark()
         {
-            List<AuditBenchmark> ls = new List<AuditBenchmark>();
+            _log4net.Info(" Http GET request " + nameof(BenchmarkProvider));
+
+            List<AuditBenchmark> listOfRepository = new List<AuditBenchmark>();
             try
             {
-                ls=obj.GetNolist();
-
-                if (ls == null)
-                    return null;
-                return ls;
+                listOfRepository= objBenchmarkRepo.GetNolist();
+                return listOfRepository;
             }
-            catch(Exception)
+            catch(Exception e)
             {
+                _log4net.Error(" Exception here" + e.Message + " " + nameof(BenchmarkProvider));
                 return null;
             }
             

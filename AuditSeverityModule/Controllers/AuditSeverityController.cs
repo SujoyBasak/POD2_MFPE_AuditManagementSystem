@@ -39,7 +39,8 @@ namespace AuditSeverityModule.Controllers
 
             try
             {
-                var response = objProvider.SeverityResponse(req);                
+                string Token = HttpContext.Request.Headers["Authorization"].Single().Split(" ")[1];
+                var response = objProvider.SeverityResponse(req,Token);                
                 return Ok(response);
             }
             catch(Exception e)

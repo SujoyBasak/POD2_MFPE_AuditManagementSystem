@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace AuditSeverityModule.Repository
@@ -24,13 +25,13 @@ namespace AuditSeverityModule.Repository
             client.BaseAddress = baseAddress;
         }
         
-        public List<AuditBenchmark> Response()
+        public List<AuditBenchmark> Response(string Token)
         {
             try
             {
                 _log4net.Info(" Http POST request from " + nameof(SeverityRepo));
                 List<AuditBenchmark> listFromAuditBenchmark = new List<AuditBenchmark>();
-
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", Token);
                 HttpResponseMessage response = client.GetAsync(client.BaseAddress + "/AuditBenchmark").Result;
                 if (response.IsSuccessStatusCode)
                 {

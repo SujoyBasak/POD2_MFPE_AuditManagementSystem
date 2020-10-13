@@ -8,6 +8,6 @@ namespace AuditSeverityModule.Providers
 {
     public interface ISeverityProvider
     {
-        public AuditResponse SeverityResponse(AuditRequest Req);
+        public AuditResponse SeverityResponse(AuditRequest Req,string Token);
     }
 }

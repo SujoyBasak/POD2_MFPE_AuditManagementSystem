@@ -8,7 +8,7 @@ namespace AuditSeverityModule.Repository
 {
     public interface ISeverityRepo
     {
-        public List<AuditBenchmark> Response();
+        public List<AuditBenchmark> Response(string Token);
         
     }
 }

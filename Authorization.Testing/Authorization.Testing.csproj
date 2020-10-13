@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthorizationService\AuthorizationService.csproj" />
+    <ProjectReference Include="..\MFPE\Microservices\AuthorizationService\AuthorizationService.csproj" />
   </ItemGroup>
 
 </Project>

@@ -289,3 +289,18 @@ INFO  04:47:45 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microse
 INFO  04:57:45  Http POST request from AuditSeverityController
 INFO  04:57:45  Http POST request from SeverityProvider
 INFO  04:57:45  Http POST request from SeverityRepo
+INFO  02:05:35 Application started. Press Ctrl+C to shut down.
+INFO  02:05:35 Application started. Press Ctrl+C to shut down.
+INFO  02:05:35 Hosting environment: Development
+INFO  02:05:35 Hosting environment: Development
+INFO  02:05:35 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuditSeverityModule
+INFO  02:05:35 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuditSeverityModule
+INFO  02:06:17  Http POST request from AuditSeverityController
+INFO  02:06:17  Http POST request from SeverityProvider
+INFO  02:06:17  Http POST request from SeverityRepo
+INFO  02:06:28  Http POST request from AuditSeverityController
+INFO  02:06:28  Http POST request from SeverityProvider
+INFO  02:06:28  Http POST request from SeverityRepo
+INFO  02:06:43  Http POST request from AuditSeverityController
+INFO  02:06:43  Http POST request from SeverityProvider
+INFO  02:06:43  Http POST request from SeverityRepo

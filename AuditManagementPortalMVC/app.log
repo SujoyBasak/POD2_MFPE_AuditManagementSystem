@@ -1,0 +1,207 @@
+INFO  01:44:34 Application started. Press Ctrl+C to shut down.
+INFO  01:44:34 Application started. Press Ctrl+C to shut down.
+INFO  01:44:34 Hosting environment: Development
+INFO  01:44:34 Hosting environment: Development
+INFO  01:44:34 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:44:34 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:44:35  Http GET request Login
+INFO  01:47:07 Application started. Press Ctrl+C to shut down.
+INFO  01:47:07 Application started. Press Ctrl+C to shut down.
+INFO  01:47:07 Hosting environment: Development
+INFO  01:47:07 Hosting environment: Development
+INFO  01:47:07 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:47:07 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:47:08  Http GET request Login
+INFO  01:47:45 Application started. Press Ctrl+C to shut down.
+INFO  01:47:45 Application started. Press Ctrl+C to shut down.
+INFO  01:47:45 Hosting environment: Development
+INFO  01:47:45 Hosting environment: Development
+INFO  01:47:45 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:47:45 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:47:45  Http GET request Login
+INFO  01:48:27 Application started. Press Ctrl+C to shut down.
+INFO  01:48:27 Application started. Press Ctrl+C to shut down.
+INFO  01:48:27 Hosting environment: Development
+INFO  01:48:27 Hosting environment: Development
+INFO  01:48:27 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:48:27 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:48:27  Http GET request Login
+INFO  01:52:39 Application started. Press Ctrl+C to shut down.
+INFO  01:52:39 Application started. Press Ctrl+C to shut down.
+INFO  01:52:39 Hosting environment: Development
+INFO  01:52:39 Hosting environment: Development
+INFO  01:52:39 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:52:39 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  01:52:40  Http GET request Login method called
+INFO  01:52:49  Http POST request Login method called
+INFO  01:52:56  Http POST request Checklist method called
+INFO  01:52:59  Http GET request Home method called
+INFO  01:53:00  Http POST request AuditForm method called
+INFO  01:53:11  Http POST request Severity method called
+INFO  01:53:11  Http GET request Internal method called
+INFO  01:53:15  Http POST request AuditResponseView method called
+INFO  01:53:22  Http GET request Home method called
+INFO  01:53:23  Http GET request History method called
+INFO  01:53:25  Http GET request SignOut method called
+INFO  01:53:27  Http GET request Home method called
+INFO  02:35:41 Application started. Press Ctrl+C to shut down.
+INFO  02:35:41 Application started. Press Ctrl+C to shut down.
+INFO  02:35:41 Hosting environment: Development
+INFO  02:35:41 Hosting environment: Development
+INFO  02:35:41 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:35:41 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:35:43  Http GET request Login method called
+INFO  02:35:50  Http GET request Home method called
+INFO  02:35:53  Http GET request Home method called
+INFO  02:35:58  Http GET request Login method called
+INFO  02:36:03  Http POST request Login method called
+INFO  02:36:03 AuthorizationProvider invoked
+INFO  02:36:04 AuthorizationRepo invoked
+INFO  02:37:24 Application started. Press Ctrl+C to shut down.
+INFO  02:37:24 Application started. Press Ctrl+C to shut down.
+INFO  02:37:24 Hosting environment: Development
+INFO  02:37:24 Hosting environment: Development
+INFO  02:37:24 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:37:24 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:37:25  Http GET request Login method called
+INFO  02:37:41  Http POST request Login method called
+INFO  02:37:41 AuthorizationProvider invoked
+INFO  02:37:41 AuthorizationRepo invoked
+INFO  02:37:45  Http POST request Checklist method called
+INFO  02:37:45 ChecklistProvider invoked
+INFO  02:37:45 ChecklistRepo invoked
+INFO  02:37:47  Http GET request Home method called
+INFO  02:37:48  Http POST request AuditForm method called
+INFO  02:37:59  Http POST request Severity method called
+INFO  02:37:59  Http GET request Internal method called
+INFO  02:38:03  Http POST request AuditResponseInternalView method called
+INFO  02:38:09  Http GET request Home method called
+INFO  02:38:10  Http POST request AuditForm method called
+INFO  02:38:21  Http POST request Severity method called
+INFO  02:38:21  Http GET request SOX method called
+INFO  02:38:23  Http POST request AuditResponseSOXView method called
+INFO  02:38:28  Http GET request Home method called
+INFO  02:38:30  Http GET request SignOut method called
+INFO  02:42:39 Application started. Press Ctrl+C to shut down.
+INFO  02:42:39 Application started. Press Ctrl+C to shut down.
+INFO  02:42:39 Hosting environment: Development
+INFO  02:42:39 Hosting environment: Development
+INFO  02:42:39 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:42:39 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:42:39  Http GET request Login method called
+INFO  02:43:21  Http GET request Login method called
+INFO  02:43:41 Application started. Press Ctrl+C to shut down.
+INFO  02:43:41 Application started. Press Ctrl+C to shut down.
+INFO  02:43:41 Hosting environment: Development
+INFO  02:43:41 Hosting environment: Development
+INFO  02:43:41 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:43:41 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:43:42  Http GET request Login method called
+INFO  02:44:29 Application started. Press Ctrl+C to shut down.
+INFO  02:44:29 Application started. Press Ctrl+C to shut down.
+INFO  02:44:29 Hosting environment: Development
+INFO  02:44:29 Hosting environment: Development
+INFO  02:44:29 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:44:29 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:44:30  Http GET request Login method called
+INFO  02:48:52 Application started. Press Ctrl+C to shut down.
+INFO  02:48:52 Application started. Press Ctrl+C to shut down.
+INFO  02:48:52 Hosting environment: Development
+INFO  02:48:52 Hosting environment: Development
+INFO  02:48:52 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:48:52 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:48:53  Http GET request Login method called
+INFO  02:49:01  Http POST request Login method called
+INFO  02:49:02 AuthorizationProvider invoked
+INFO  02:49:02 AuthorizationRepo invoked
+INFO  02:49:11  Http POST request Checklist method called
+INFO  02:49:11 ChecklistProvider invoked
+INFO  02:49:11 ChecklistRepo invoked
+INFO  02:50:23  Http GET request Home method called
+INFO  02:50:25  Http POST request AuditForm method called
+INFO  02:50:28  Http GET request SignOut method called
+INFO  02:52:45 Application started. Press Ctrl+C to shut down.
+INFO  02:52:45 Application started. Press Ctrl+C to shut down.
+INFO  02:52:45 Hosting environment: Development
+INFO  02:52:45 Hosting environment: Development
+INFO  02:52:45 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:52:45 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  02:52:46  Http GET request Login method called
+INFO  02:52:56  Http POST request Login method called
+INFO  02:52:56 AuthorizationProvider invoked
+INFO  02:52:56 AuthorizationRepo invoked
+INFO  05:38:38 Application started. Press Ctrl+C to shut down.
+INFO  05:38:38 Application started. Press Ctrl+C to shut down.
+INFO  05:38:38 Hosting environment: Development
+INFO  05:38:38 Hosting environment: Development
+INFO  05:38:38 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  05:38:38 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  05:38:40  Http GET request Login method called
+INFO  05:38:56  Http POST request Login method called
+INFO  05:38:56 AuthorizationProvider invoked
+INFO  05:38:56 AuthorizationRepo invoked
+INFO  05:39:02  Http POST request AuditForm method called
+INFO  05:39:16  Http POST request Severity method called
+INFO  05:39:16  Http GET request Internal method called
+INFO  05:39:20  Http POST request AuditResponseInternalView method called
+INFO  05:39:27  Http GET request Home method called
+INFO  08:16:59 Application started. Press Ctrl+C to shut down.
+INFO  08:16:59 Application started. Press Ctrl+C to shut down.
+INFO  08:16:59 Hosting environment: Development
+INFO  08:16:59 Hosting environment: Development
+INFO  08:16:59 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:16:59 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:16:59  Http GET request Login method called
+INFO  08:17:10  Http POST request Login method called
+INFO  08:17:10 AuthorizationProvider invoked
+INFO  08:17:10 AuthorizationRepo invoked
+INFO  08:17:20  Http POST request Login method called
+INFO  08:17:20 AuthorizationProvider invoked
+INFO  08:17:20 AuthorizationRepo invoked
+INFO  08:17:25  Http POST request Checklist method called
+INFO  08:17:25 ChecklistProvider invoked
+INFO  08:17:25 ChecklistRepo invoked
+INFO  08:17:29  Http GET request Home method called
+INFO  08:17:30  Http POST request AuditForm method called
+INFO  08:17:43  Http POST request Severity method called
+INFO  08:17:43  Http GET request Internal method called
+INFO  08:17:48  Http POST request AuditResponseInternalView method called
+INFO  08:17:55  Http GET request Home method called
+INFO  08:17:58  Http POST request AuditForm method called
+INFO  08:18:11  Http POST request Severity method called
+INFO  08:18:11  Http GET request SOX method called
+INFO  08:18:22  Http POST request AuditResponseSOXView method called
+INFO  08:18:27  Http GET request Home method called
+INFO  08:18:30  Http GET request Home method called
+INFO  08:18:33  Http GET request SignOut method called
+INFO  08:18:40  Http GET request Home method called
+INFO  08:33:34 Application started. Press Ctrl+C to shut down.
+INFO  08:33:34 Application started. Press Ctrl+C to shut down.
+INFO  08:33:34 Hosting environment: Development
+INFO  08:33:34 Hosting environment: Development
+INFO  08:33:34 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:33:34 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:33:35  Http GET request Login method called
+INFO  08:34:19 Application started. Press Ctrl+C to shut down.
+INFO  08:34:19 Application started. Press Ctrl+C to shut down.
+INFO  08:34:19 Hosting environment: Development
+INFO  08:34:19 Hosting environment: Development
+INFO  08:34:20 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:34:20 Content root path: C:\Users\Sujoy Basak\source\repos\AuditManagementPortalMVC
+INFO  08:34:21  Http GET request Login method called
+INFO  08:34:51  Http POST request Login method called
+INFO  08:34:51 AuthorizationProvider invoked
+INFO  08:34:51 AuthorizationRepo invoked
+INFO  08:35:09  Http POST request Login method called
+INFO  08:35:09 AuthorizationProvider invoked
+INFO  08:35:09 AuthorizationRepo invoked
+INFO  08:37:42  Http POST request Checklist method called
+INFO  08:37:42 ChecklistProvider invoked
+INFO  08:37:42 ChecklistRepo invoked
+INFO  08:37:46  Http GET request Home method called
+INFO  08:37:52  Http POST request AuditForm method called
+INFO  08:38:09  Http POST request Severity method called
+INFO  08:38:09  Http GET request SOX method called
+INFO  08:38:15  Http POST request AuditResponseSOXView method called
+INFO  08:38:29  Http GET request Home method called
+INFO  08:38:44  Http GET request SignOut method called

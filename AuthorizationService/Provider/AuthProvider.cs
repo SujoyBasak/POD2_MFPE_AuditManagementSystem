@@ -27,6 +27,7 @@ namespace AuthorizationService.Provider
         /// <returns></returns>
         public string GenerateJSONWebToken(Authenticate userInfo,IConfiguration _config)
         {
+            _log4net.Info(nameof(GenerateJSONWebToken)+" invoked");
             if (userInfo == null)
                 return null;
             try
@@ -78,7 +79,7 @@ namespace AuthorizationService.Provider
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception Occured " + e.Message+ " from "+ nameof(AuthProvider));
+                _log4net.Error("Exception Occured " + e.Message+ " from "+ nameof(GenerateJSONWebToken));
                 return null;
             }
             

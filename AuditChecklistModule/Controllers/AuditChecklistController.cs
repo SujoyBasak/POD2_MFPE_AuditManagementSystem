@@ -16,12 +16,12 @@ namespace AuditChecklistModule.Controllers
     [Authorize]
     public class AuditChecklistController : ControllerBase
     {
-        private readonly IChecklistProvider obj;
+        private readonly IChecklistProvider checklistProviderobj;
         readonly log4net.ILog _log4net;
                  
-        public AuditChecklistController(IChecklistProvider _obj)
+        public AuditChecklistController(IChecklistProvider _checklistProviderobj)
         {
-            obj = _obj;
+            checklistProviderobj = _checklistProviderobj;
             _log4net = log4net.LogManager.GetLogger(typeof(AuditChecklistController));
         }
 
@@ -29,23 +29,24 @@ namespace AuditChecklistModule.Controllers
         [HttpGet("{auditType}")]
         public IActionResult GetQuestions(string auditType)
         {
-            _log4net.Info("AuditChecklistController Http GET request called");
+            _log4net.Info("AuditChecklistController Http GET request called"+ nameof(AuditChecklistController));
             if (string.IsNullOrEmpty(auditType))
                 return BadRequest("No Input");
+
+            if ((auditType !="Internal") && (auditType !="SOX"))
+                return Ok("Wrong Input");
+
             try
             {
-                var list = obj.QuestionsProvider(auditType);
-
-                if (list != null)
+                List<Questions> list = checklistProviderobj.QuestionsProvider(auditType);
                     return Ok(list);
-                else
-                    return BadRequest("Wrong Input");
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception from AuditChecklist" +e.Message);
+                _log4net.Error("Exception " +e.Message+nameof(AuditChecklistController));
                 return StatusCode(500);
             }
         }        
     }
 }
+//Change

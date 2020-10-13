@@ -9,6 +9,8 @@ namespace AuditChecklistModule.Repository
 {
     public class ChecklistRepo : IChecklistRepo
     {
+        readonly log4net.ILog _log4net= log4net.LogManager.GetLogger(typeof(ChecklistRepo));
+
         private static List<Questions> InternalQuestionsList = new List<Questions>()
         {
             new Questions
@@ -70,20 +72,26 @@ namespace AuditChecklistModule.Repository
 
         public List<Questions> GetQuestions(string auditType)
         {
-            List<Questions> ls = new List<Questions>();
+            try
+            {
+                _log4net.Info("Log from " + nameof(ChecklistRepo));
+                List<Questions> listOfQuestions = new List<Questions>();
 
-            if (auditType == "Internal")
-                ls = InternalQuestionsList;
-            else if (auditType == "SOX")
-                ls = SOXQuestionsList;
-            else
+                if (auditType == "Internal")
+                    listOfQuestions = InternalQuestionsList;
+                else
+                    listOfQuestions = SOXQuestionsList;
+
+                return listOfQuestions;
+            }
+            catch(Exception e)
+            {
+                _log4net.Error("Exception " + e.Message + nameof(ChecklistRepo));
                 return null;
-            
-              return ls;
 
-            
+            }
+   
         }
-
-        
+   
     }
 }

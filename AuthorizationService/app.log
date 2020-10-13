@@ -469,3 +469,83 @@ INFO  01:03:19  Http Post requestTokenController
 INFO  01:03:30  Http Post requestTokenController
 INFO  01:03:50  Http Post requestTokenController
 INFO  01:03:57  Http Post requestTokenController
+INFO  04:50:13 Application started. Press Ctrl+C to shut down.
+INFO  04:50:13 Application started. Press Ctrl+C to shut down.
+INFO  04:50:13 Hosting environment: Development
+INFO  04:50:13 Hosting environment: Development
+INFO  04:50:13 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuthorizationService
+INFO  04:50:13 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuthorizationService
+INFO  04:50:42  Http Post requestTokenController
+INFO  08:03:24 Application started. Press Ctrl+C to shut down.
+INFO  08:03:25 Application started. Press Ctrl+C to shut down.
+INFO  08:03:25 Hosting environment: Development
+INFO  08:03:25 Hosting environment: Development
+INFO  08:03:25 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuthorizationService
+INFO  08:03:25 Content root path: C:\Users\Sujoy Basak\source\repos\MFPE\Microservices\AuthorizationService
+INFO  08:03:45  Http Post requestTokenController
+INFO  08:03:58  Http Post requestTokenController
+INFO  08:04:12  Http Post requestTokenController
+INFO  08:04:25  Http Post requestTokenController
+INFO  08:04:39  Http Post requestTokenController
+INFO  08:05:29  Http Post requestTokenController
+INFO  03:31:48 Application started. Press Ctrl+C to shut down.
+INFO  03:31:48 Application started. Press Ctrl+C to shut down.
+INFO  03:31:48 Hosting environment: Development
+INFO  03:31:48 Hosting environment: Development
+INFO  03:31:48 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  03:31:48 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  03:32:23  Http Post requestTokenController
+INFO  04:56:37 Application started. Press Ctrl+C to shut down.
+INFO  04:56:37 Application started. Press Ctrl+C to shut down.
+INFO  04:56:37 Hosting environment: Development
+INFO  04:56:37 Hosting environment: Development
+INFO  04:56:37 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  04:56:37 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  05:02:11  Http Post requestTokenController
+INFO  05:29:49  Http Post requestTokenController
+INFO  06:29:57 Application started. Press Ctrl+C to shut down.
+INFO  06:29:57 Application started. Press Ctrl+C to shut down.
+INFO  06:29:57 Hosting environment: Development
+INFO  06:29:57 Hosting environment: Development
+INFO  06:29:57 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  06:29:57 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  06:30:27  Http Post requestLogin
+INFO  06:30:27 GetCredentials invoked
+INFO  06:30:27 GenerateJSONWebToken invoked
+INFO  06:30:36  Http Post requestLogin
+INFO  06:30:36 GetCredentials invoked
+INFO  06:42:38 Application started. Press Ctrl+C to shut down.
+INFO  06:42:38 Application started. Press Ctrl+C to shut down.
+INFO  06:42:38 Hosting environment: Development
+INFO  06:42:38 Hosting environment: Development
+INFO  06:42:38 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  06:42:38 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  06:42:56  Http Post requestLogin
+INFO  06:42:56 GetCredentials invoked
+INFO  06:43:10 GenerateJSONWebToken invoked
+INFO  08:22:25 Application started. Press Ctrl+C to shut down.
+INFO  08:22:25 Application started. Press Ctrl+C to shut down.
+INFO  08:22:25 Hosting environment: Development
+INFO  08:22:25 Hosting environment: Development
+INFO  08:22:25 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  08:22:25 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  08:22:52  Http Post requestLogin
+INFO  08:22:52 GetCredentials invoked
+INFO  08:23:00 GenerateJSONWebToken invoked
+INFO  08:25:57  Http Post requestLogin
+INFO  08:25:57 GetCredentials invoked
+INFO  08:25:57 GenerateJSONWebToken invoked
+INFO  08:35:12 Application started. Press Ctrl+C to shut down.
+INFO  08:35:12 Application started. Press Ctrl+C to shut down.
+INFO  08:35:12 Hosting environment: Development
+INFO  08:35:12 Hosting environment: Development
+INFO  08:35:12 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  08:35:12 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  08:35:39  Http Post requestLogin
+INFO  08:35:39 GetCredentials invoked
+INFO  08:36:48 Application started. Press Ctrl+C to shut down.
+INFO  08:36:48 Application started. Press Ctrl+C to shut down.
+INFO  08:36:48 Hosting environment: Development
+INFO  08:36:48 Hosting environment: Development
+INFO  08:36:48 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master
+INFO  08:36:48 Content root path: C:\Users\Sujoy Basak\source\repos\Cloud\856691_POD2_MFPE_AuthorizationService-master

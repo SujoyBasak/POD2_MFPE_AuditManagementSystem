@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0rma3/38CEjYRzQFNO+hwtr0Zmo5TczG8/c+8yjAkuSo2gcGacaK7MCoDU/mXJkbvT6Hm7NX7cMCnB9gYSH+vA==",
+  "dgSpecHash": "UoildugpaBhlIbJea0Lt1qJIDrmuNpZ9L9CSwFYtvoauODHYNAAZr6GISv0HvKCQ/EV3V5sRyQQjT3iyhVuBSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\Authorization.Testing\\Authorization.Testing.csproj",
+  "projectFilePath": "C:\\Users\\Sujoy Basak\\source\\repos\\Authorization.Testing\\Authorization.Testing.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sujoy Basak\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\Sujoy Basak\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",

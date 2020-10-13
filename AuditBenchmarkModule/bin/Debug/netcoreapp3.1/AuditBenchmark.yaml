@@ -1,0 +1,33 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auditbenchmarkmoduledeploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: AuditBenchmarkModule
+  template:
+    metadata:
+      labels:
+        app: AuditBenchmarkModule
+    spec:
+      containers:
+      - name: auditbenchmarkrepos
+        image: auditchecklist.azurecr.io/auditbenchmarkrepos:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: dsconfigsn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auditbenchmarkmodule
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: AuditBenchmarkModule

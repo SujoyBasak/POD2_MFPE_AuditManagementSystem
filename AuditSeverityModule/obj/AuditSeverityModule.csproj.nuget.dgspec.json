@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuditSeverityModule\\AuditSeverityModule.csproj": {}
   },
   "projects": {
@@ -13,22 +12,9 @@
         "projectPath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuditSeverityModule\\AuditSeverityModule.csproj",
         "packagesPath": "C:\\Users\\Sujoy Basak\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Sujoy Basak\\source\\repos\\POD2_MFPE\\AuditSeverityModule\\obj\\",
-=======
-    "C:\\Users\\abhar\\source\\repos\\Pod2_MFPE_new\\AuditSeverityModule\\AuditSeverityModule.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\abhar\\source\\repos\\Pod2_MFPE_new\\AuditSeverityModule\\AuditSeverityModule.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\abhar\\source\\repos\\Pod2_MFPE_new\\AuditSeverityModule\\AuditSeverityModule.csproj",
-        "projectName": "AuditSeverityModule",
-        "projectPath": "C:\\Users\\abhar\\source\\repos\\Pod2_MFPE_new\\AuditSeverityModule\\AuditSeverityModule.csproj",
-        "packagesPath": "C:\\Users\\abhar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\abhar\\source\\repos\\Pod2_MFPE_new\\AuditSeverityModule\\obj\\",
->>>>>>> 94b51e972d6ac2d9917bd87ba83b98ef7d82ddc4
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\abhar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sujoy Basak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

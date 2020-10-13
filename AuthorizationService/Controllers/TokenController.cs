@@ -16,7 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using AuthorizationService.Provider;
-
+using log4net;
 
 namespace AuthorizationService.Controllers          
 {
@@ -24,7 +24,7 @@ namespace AuthorizationService.Controllers
     [ApiController]
     public class TokenController : ControllerBase
     {
-        private static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(TokenController));
+        private readonly ILog _log4net = LogManager.GetLogger(typeof(TokenController));
         private IConfiguration config;
         private readonly IAuthProvider objProvider;
         public TokenController(IConfiguration config,IAuthProvider objProvider)
@@ -36,7 +36,7 @@ namespace AuthorizationService.Controllers
         [HttpPost]
         public IActionResult Login([FromBody] Authenticate loginCredentials)
         {
-            _log4net.Info(" Http Post request" +nameof(TokenController));
+            _log4net.Info(" Http Post request" +nameof(Login));
             if (loginCredentials == null)
             {
                 return BadRequest();
@@ -57,11 +57,12 @@ namespace AuthorizationService.Controllers
             }
             catch(Exception e)
             {
-                _log4net.Error("Exception Occured "+e.Message+" from " +nameof(TokenController));
+                _log4net.Error("Exception Occured "+e.Message+" from " +nameof(Login));
                 return StatusCode(500);
             }
             
         }
+        
         
     }
 }
